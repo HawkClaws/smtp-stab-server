@@ -1,0 +1,10 @@
+{
+    "name": "smtp-stab-package",
+    "version": "1.0.0",
+    "author": "hogehoge",
+    "dependencies": {
+      "mailparser": "^3.6.4",
+      "nodemailer": "^6.9.3",
+      "smtp-server": "^3.12.0"
+    }
+  }

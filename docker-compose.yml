@@ -1,0 +1,12 @@
+version: '3'
+services:
+  node_app:
+    image: node:20-alpine3.17
+    command: >
+      sh -c "npm install && \
+      node app.js"
+    ports:
+      - 456:456
+    volumes:
+      - ./app:/app
+    working_dir: "/app"
