@@ -27,7 +27,7 @@ const server = new SMTPServer(
         const parsedData = await simpleParser(source);
         const { from, to, bcc, cc, subject, text } = parsedData;
         responseCode = extractNumberFromString(to.text);
-        if (responseCode != null) {
+        if (responseCode != null && responseCode >= 300) {
           isError = true;
         }
         console.log(responseCode);
